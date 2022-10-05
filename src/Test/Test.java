@@ -47,12 +47,25 @@ public class Test {
         System.out.println("EMPLEADOS: ");
         imprimir(todas[1]);
             
-            
+        System.out.println(""); 
+        
+        System.out.println("PRIMERA LLAMADA CON 3 arg: ");
+        imprimirNumeros(1, 2, 4);
+        System.out.println("SEGUNDA LLAMADA CON 2 arg: ");
+        imprimirNumeros(3, 7);
+        
     }
     
     public static void imprimir(Object lista[]){
-        for (int i = 0; i < lista.length; i++) {
+        for (int i = 0; i < lista.length; i++) {    
             System.out.println("Lista: " + i + "Lista: " + lista[i]);
+        }
+    }
+    
+    
+    public static void imprimirNumeros(int...numeros){
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println("numero --> [" + i + "] " + numeros[i]);
         }
     }
         
